@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>javascript</title>
+</head>
+<body>
+
+<h3>Book List</h3>
+
+<input type="text" id="book">
+  <p id="demo"></p>
+  <button onclick="add()">Add</button>
+<script type="text/javascript">
+
+var Book1={
+    name:"Satranc",
+    status:"Sale",
+    Preis:"15 CHF"
+}
+var Book2={
+    name:"Amok Koşucusu",
+    status:"Sold",
+    Preis:"20 CHF"
+}
+var Book3={
+    name:"Korku",
+    status:"Sale",
+    Preis:"25 CHF"
+}
+var Booklist =[];
+Booklist.push(Book1);
+Booklist.push(Book2);
+Booklist.push(Book3);
+console.log(Booklist);
+
+function add(a,b,c){
+  
+  var addbook = document.getElementById("book").value;
+  Booklist.push(addbook);
+  document.getElementById("demo").innerHTML = Booklist;
+  Booklist.sort();
+}
+
+
+
+    </script>
+
+</body>
+</html>

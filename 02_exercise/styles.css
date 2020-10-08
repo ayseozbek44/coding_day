@@ -1,0 +1,26 @@
+.container{
+  width: 80%;
+  margin: 50px auto;
+  color: #fff;
+  
+  font-size: 24px;
+  text-align: center;
+  text-shadow: 1px 1px 1px #000;
+  
+  display: grid;
+
+  /*By using auto-fit, we can gain responsiveness without the need for any media query code.*/
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-rows: minmax(300px, min-content);
+  grid-gap:15px;
+
+}
+.aside1{
+  background-color: #581B45;
+}
+.main{
+  background-color: #900C3F;
+}
+.aside2{
+  background-color: #C70039;
+}

@@ -1,0 +1,1 @@
+I added extra myscript file to javascript folders. But I created it by typing in Html and running it.
